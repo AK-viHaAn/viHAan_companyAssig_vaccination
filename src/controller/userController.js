@@ -73,8 +73,7 @@ const getUserDetails = async function (res,res){
 
 const getUserDetailsByFilter = async function (req, res) {
     try {
-        let data = req.body
-        let { age, pincode, vaccinationStatus } = data
+        let data = req.query
         let findUser = await userModel.find(...data)
         return res.status(200).send({ status: true, msg: "all users", dataCount: findUser.length, data: findUser })
     } catch (err) {
