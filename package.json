@@ -1,0 +1,28 @@
+{
+  "name": "vihaan_companyassig_vaccination",
+  "version": "1.0.0",
+  "description": "\"its a company Assignment of CO-VID Vaccine\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AK-viHaAn/viHAan_companyAssig_vaccination.git"
+  },
+  "keywords": [
+    "vA"
+  ],
+  "author": "Anand Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AK-viHaAn/viHAan_companyAssig_vaccination/issues"
+  },
+  "homepage": "https://github.com/AK-viHaAn/viHAan_companyAssig_vaccination#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2",
+    "nodemon": "^2.0.20"
+  }
+}
