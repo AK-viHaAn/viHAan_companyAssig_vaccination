@@ -11,7 +11,7 @@ router.get("/userDetails",userController.getUserDetails)
 router.get("/getUserDetailsByAdmin",userController.getUserDetailsByFilter)
 
 router.get('/getTimeSlots',)
-router.post('/bookSlot',)
+router.post ('/booktimeslot', )
 router.put('/updateSlots',)
 router.get("/getTimeSlotByAdmin",)
 

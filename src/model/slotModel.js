@@ -1,14 +1,23 @@
 const mongoose = require('mongoose')
 
 const slotSchema = new mongoose.Schema({
-  
-},
-{timestamps: true}
+    
+        date: {
+            type: String
+        },
+        time: {
+            type: String
+        },
+        userId: {
+            type: [ObjId],
+            ref: 'user'
+        }
+
+    }, { timestamps: true }
 )
 
 
-module.exports= mongoose.model("user",userSchema)
-
+module.exports= mongoose.model("slot",slotSchema)
 
 
 
