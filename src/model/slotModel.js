@@ -1,25 +1,15 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose")
 
-const slotSchema = new mongoose.Schema({
-    
-        date: {
-            type: String
-        },
-        time: {
-            type: String
-        },
-        userId: {
-            type: [ObjId],
-            ref: 'user'
-        }
-
-    }, { timestamps: true }
+const slotSchema = new mongoose.Schema(
+    {
+        Date: { type: Date, required: true },
+        slotStartAt: { type: String, require: true },
+        slotEndAt: { type: String, require: true },
+        Duration: { type: String, required: true },
+        firstDose: { type: Number, required: true },
+        secondDose: { type: Number, required: true }
+    }
 )
 
 
-module.exports= mongoose.model("slot",slotSchema)
-
-
-
-
-
+module.exports = mongoose.model("Slot", slotSchema)
